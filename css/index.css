@@ -23,6 +23,7 @@ img{ width: 100%;}
 /* 漢堡選單 */
 .navbar-toggler-wrapper{
     z-index: 99; background-color: white;
+    width: 100%;
 }
 .navbar-toggler{ display: block;
 }
@@ -471,9 +472,7 @@ p.copyRight{
 
 /* 手機直 */
 @media screen and (max-width: 767px){
-    
-    body{
-    }
+
     .navbar-toggler-wrapper{
         width: 100vw;
         height: 53px;
@@ -511,8 +510,12 @@ p.copyRight{
         padding-top: 40px;
         background:  #fff2e6;
     }
+    .feature-container{
+        background: #fff;
+        margin: auto;
+    }
     .feature-container ul{
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .feature-list {
         margin: 0 0 2% 0;
@@ -524,10 +527,10 @@ p.copyRight{
         display: none;
     }
     .feature-container .item-name{
+        font-size: 1.875em;
         color:  saddlebrown;
     }
     .feature-title::before{
-        background-color: #fff;
         top: 25px;
     }
     .feature-container .more{
@@ -535,7 +538,7 @@ p.copyRight{
         margin-top: 40px;
     }
     .feature-container .more a{
-        width: 135px;
+        width: 145px;
         height: 40px;
         font-size: 1.25em;
     }
