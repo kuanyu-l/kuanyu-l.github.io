@@ -303,7 +303,6 @@ img{ width: 100%;}
     width: 140px;
     height: 40px;
     display: block;
-    background: linear-gradient(to right, #ffecdf, #dfa963);
     border-radius: 20px;
     border-image: linear-gradient(to right, #ffecdf, #dfa963);
     transition: .5s, color 0s;
@@ -339,10 +338,6 @@ img{ width: 100%;}
 }
 .category-col{ display: flex; flex-direction: column;
 }
-/* .category-row .col-12{ max-width: 840px; height: 440px;
-}
-.category-row .col-6{ max-width: 420px;
-} */
 
 .col-12 .category-item{ 
     width: 100%;
