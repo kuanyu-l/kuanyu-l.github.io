@@ -92,7 +92,6 @@ img{ width: 100%;}
 }
 .dropdown-menu{
     display: flex;
-    /* justify-content: space-between; */
     min-width: 10rem;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
@@ -105,7 +104,6 @@ img{ width: 100%;}
     font-size: 0.625em;
 }
 .dropdown-menu .dropdown-item{
-    /* font-weight: 500; */
     margin-right: 10%;
 }
 .dropdown-item-class{
@@ -422,7 +420,7 @@ span.item-name-en{ font-size: .5em;
 }
 #footer .container{ margin: 0 0 0 auto; padding-top: 30px;
 }
-.footer-company p, .conpanyList a, .footer-navbar a, .footer-contact p{
+.footer-company p, .companyList a, .footer-navbar a, .footer-contact p{
     font-size: .875em;
     font-weight: lighter;
     color: white;
@@ -435,7 +433,7 @@ span.item-name-en{ font-size: .5em;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-.conpanyList{
+.companyList{
 
 }
 
@@ -476,9 +474,10 @@ p.copyRight{
     .navbar-toggler-wrapper{
         width: 100vw;
         height: 53px;
+        padding: 10px 15px;
         display: flex;
         align-items: center;
-        /* padding: 5px 20px 0 20px; */
+        justify-content: space-between;
         position: fixed;
         top: 0;
         left: 0;
@@ -488,8 +487,16 @@ p.copyRight{
         display: block;
     }
     .header{ overflow: hidden; width: 0; height: 0;}
+    .brand-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .icon{
+        margin: 0;
+    }
     .carousel{
         margin-top: 53px;
+        overflow: hidden;
     }
     .carousel-mt{
         margin-top: 53px;
@@ -550,7 +557,7 @@ p.copyRight{
         background:  #fff2e6 ;
     }
     .category-wrapper .item-container{
-        padding: 0 5px;
+        padding: 5px 5px 0 5px;
     }
     .category-item{
         margin-bottom: 30px;
@@ -602,6 +609,21 @@ p.copyRight{
         width: 50px;
         height: 2px;
         background:  saddlebrown 50%;)
+    }
+    #footer .container{
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #footer .companyList ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+    #footer .companyList ul li{
+        padding-right: 15px;
+    }
+    .footer-navbar, .footer-contact{
+        margin-top: 40px;
     }
 }
 
