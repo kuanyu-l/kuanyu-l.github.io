@@ -549,7 +549,6 @@ p.copyRight{
         height: 40px;
         font-size: 1.25em;
         display: block;
-        background: linear-gradient(to right, #ffecdf, #dfa963);
         border-radius: 20px;
         border-image: linear-gradient(to right, #ffecdf, #dfa963);
         color: white;
