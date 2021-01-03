@@ -370,8 +370,10 @@
     $(function(){
         let scrollbar = $(window).scrollTop();
         let slogantop = $('.slogan-wrapper').offset().top;
+        let footertop = $('#footer').offset().top;
         let hotGoodsTop = $('.hotGoods-wrapper').offset().top;
         console.log(slogantop);
+        console.log(footertop);
         console.log(hotGoodsTop);
         
 
@@ -390,11 +392,11 @@
                 }
 
                 // slogan滑入滑出
-                if(scrollbar >= 2880 ){
+                if(scrollbar >= 1890 ){
                     $('.slogan-en').removeClass('fadeout');
                     $('.slogan-en').addClass('fadein');
                 }
-                if(scrollbar < 2350 ){
+                if(scrollbar < 2100 ){
                     $('.slogan-en').removeClass('fadein');
                     $('.slogan-en').addClass('fadeout');
                 }
