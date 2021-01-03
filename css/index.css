@@ -549,9 +549,12 @@ p.copyRight{
     .category-wrapper{
         background:  #fff2e6 ;
     }
+    .category-wrapper .item-container{
+        padding: 0 5px;
+    }
     .category-item{
         margin-bottom: 30px;
-        padding: 0 10px;
+        padding: 0 5px;
     }
     .goods-pic.col-11{
         margin: auto;
@@ -583,13 +586,10 @@ p.copyRight{
         letter-spacing: .2em;
         line-height: 1.375em;
     }
-    /* .pic-md, .pic-sm{
-        width: ;
-    } */
     .item-name-en{font-family: sans-serif;
     }
     .slogan-wrapper .container{
-        padding: 110px 0 150px 0;
+        padding: 60px 0 150px 0;
     }
     .slogan-en{
         font-size: 2.25em;
