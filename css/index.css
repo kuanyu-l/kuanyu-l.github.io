@@ -466,8 +466,6 @@ p.copyRight{
 
 
 
-
-
 /* 手機直 */
 @media screen and (max-width: 767px){
 
@@ -572,7 +570,7 @@ p.copyRight{
         flex-direction: row;
     }
     .pic-lg, .pic-md, .pic-sm{
-        height: 200px; margin-bottom: 5px;
+        height: 40vh; margin-bottom: 5px;
     }
     .pic-lg img, .pic-md img, .pic-sm img{
         height: 100%;
@@ -628,6 +626,12 @@ p.copyRight{
     }
 }
 
+
+@media screen and (max-width: 576px){
+    .pic-lg, .pic-md, .pic-sm{
+        height: 25vh; margin-bottom: 5px;
+    }
+}
 
 /* 平板 */
 @media screen and (min-width: 768px){
