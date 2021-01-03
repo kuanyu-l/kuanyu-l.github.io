@@ -544,14 +544,16 @@ p.copyRight{
         line-height: 40px;
         margin-top: 40px;
     }
-    .feature-container .more a{
-        width: 145px;
+    .feature-container .more a, .feature-container .more:hover a{
+        width: 140px;
         height: 40px;
         font-size: 1.25em;
-    }
-    .feature-container .more:hover a{
-        width: 160px;
-        line-height: 40px;
+        display: block;
+        background: linear-gradient(to right, #ffecdf, #dfa963);
+        border-radius: 20px;
+        border-image: linear-gradient(to right, #ffecdf, #dfa963);
+        color: white;
+        text-shadow: 1px 1px 0 #dfa963;
     }
     .category-wrapper{
         background:  #fff2e6 ;
