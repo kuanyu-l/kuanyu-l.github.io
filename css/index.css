@@ -488,6 +488,9 @@ p.copyRight{
         display: block;
     }
     .header{ overflow: hidden; width: 0; height: 0;}
+    .carousel{
+        margin-top: 53px;
+    }
     .carousel-mt{
         margin-top: 53px;
     }
@@ -502,8 +505,10 @@ p.copyRight{
     .container{
         padding-top: 50px;
     }
-    .category-wrapper .item-container{
+    .hotGoods-wrapper, .category-wrapper, .item-container, .feature-wrapper, .slogan-wrapper {
         margin-top: 0;
+        padding-top: 40px;
+        background:  #fff2e6;;
     }
     .feature-container ul{
         margin-top: 20px;
@@ -514,8 +519,19 @@ p.copyRight{
     .hotGoods-wrapper .item-container{
         display: none;
     }
+    .hotGoods-wrapper>.container.col-12{
+        display: none;
+    }
+    .feature-container .item-name{
+        color:  saddlebrown;
+    }
+    .feature-title::before{
+        background-color: #fff;
+        top: 25px;
+    }
     .feature-container .more{
         line-height: 40px;
+        margin-top: 40px;
     }
     .feature-container .more a{
         width: 140px;
@@ -532,6 +548,10 @@ p.copyRight{
     .category-item{
         margin-bottom: 30px;
         padding: 0 10px;
+    }
+    .category-col {
+        display: flex;
+        flex-direction: row;
     }
     .pic-lg, .pic-md, .pic-sm{
         height: 247px; margin-bottom: 5px;
@@ -552,14 +572,26 @@ p.copyRight{
     .category-item .item-name{
         color: saddlebrown;
         font-family: "Noto Serif TC", Georgia,  serif;
-        font-size: 1.5em;
+        font-size: 1.25em;
         letter-spacing: .2em;
         line-height: 1.375em;
     }
     .item-name-en{font-family: sans-serif;
     }
+    .slogan-wrapper .container{
+        padding: 110px 0 150px 0;
+    }
     .slogan-en{
         font-size: 2.25em;
+    }
+
+    .topic-title h1{
+        font-size: 1.5em;
+    }
+    .topic-title::after{
+        width: 50px;
+        height: 2px;
+        background:  saddlebrown 50%;)
     }
 }
 
