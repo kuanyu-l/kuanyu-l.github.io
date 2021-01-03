@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
 
-*{ margin: 0; padding: 0; box-sizing: border-box;}
+*{ margin: 0; padding: 0; box-sizing: border-box; overflow: hidden;}
 body{ font-family: 'Noto Sans TC',sans-serif;}
 a{ text-decoration: none;}
 ol, ul{ list-style: none;}
@@ -238,8 +238,6 @@ img{ width: 100%;}
 }
 
 /* 產品特色 feature */
-
-
 .feature-wrapper{
     position: relative;
     background-color: #fff;
@@ -534,7 +532,7 @@ p.copyRight{
         margin-top: 40px;
     }
     .feature-container .more a{
-        width: 140px;
+        width: 135px;
         height: 40px;
         font-size: 1.25em;
     }
@@ -548,6 +546,9 @@ p.copyRight{
     .category-item{
         margin-bottom: 30px;
         padding: 0 10px;
+    }
+    .goods-pic.col-11{
+        margin: auto;
     }
     .category-col {
         display: flex;
