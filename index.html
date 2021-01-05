@@ -17,6 +17,26 @@
     <!-- 頁首導覽列 -->
     <div class="header">
         <div class="m-navbar-wrapper fixed-top">
+            <div class="toolbar-search">
+                <form class="search">
+                    <button class="btn-search">
+                        <span href="#" class="icon icon-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <input type="search">
+                    <button>
+                        <span href="#" class="icon icon-cancel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+            </div>
             <a href="#" class="brand-logo">
                 <img src="/images/imei-logo.png" alt="義美食品">
             </a>
@@ -62,7 +82,7 @@
                         </div>
                         <div class="m-dropdown-wrapper">
                             <div class="container">
-                                <ul class="dropdown-menu">
+                                <ul class="m-dropdown-menu">
                                     <li>
                                         <div class="m-dropdown-item">
                                             <a href="#">精緻禮品 Gift</a>
@@ -77,8 +97,8 @@
                                             </div>
                                         </div>
                                         <ul class="m-dropdown-item-class" id="m-togglerContent--Gift">
-                                            <li><a href="#">季節禮盒 <span>Festival</span></a></li>
-                                            <li><a href="#">伴手禮 <span>Souvenirs</span></a></li>
+                                            <li><a href="#">季節禮盒 Festival</a></li>
+                                            <li><a href="#">伴手禮 Souvenirs</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -94,11 +114,11 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <ul class="dropdown-item-class hidden" id="m-togglerContent--Cake">
-                                            <li><a href="#">冰淇淋蛋糕 <span>Ice Cream Cake</span></a></li>
-                                            <li><a href="#">手繪蛋糕 <span>Hand Draw Cake</span></a></li>
-                                            <li><a href="#">客製化蛋糕 <span>Customized</span></a></li>
-                                            <li><a href="#">乳酪芝士塔 <span>Cheese Cake</span></a></li>
+                                        <ul class="m-dropdown-item-class" id="m-togglerContent--Cake">
+                                            <li><a href="#">冰淇淋蛋糕 Ice Cream Cake</a></li>
+                                            <li><a href="#">手繪蛋糕 Hand Draw Cake</a></li>
+                                            <li><a href="#">客製化蛋糕 Customized</a></li>
+                                            <li><a href="#">乳酪芝士塔 Cheese Cake</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -114,10 +134,10 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <ul class="dropdown-item-class hidden" id="m-togglerContent--WeddingnBaby">
-                                            <li><a href="#">IRIS 喜餅 <span>IRIS</span></a></li>
-                                            <li><a href="#">Alamode 喜餅 <span>Alamode</span></a></li>
-                                            <li><a href="#">彌月 <span>Baby</span></a></li>
+                                        <ul class="m-dropdown-item-class" id="m-togglerContent--WeddingnBaby">
+                                            <li><a href="#">IRIS 喜餅 IRIS</a></li>
+                                            <li><a href="#">Alamode 喜餅 Alamode</a></li>
+                                            <li><a href="#">彌月 Baby</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -468,11 +488,11 @@
                 }
 
                 // slogan滑入滑出
-                if(scrollbar >= 1590 ){
+                if(scrollbar >= 1790 ){
                     $('.slogan-en').removeClass('fadeout');
                     $('.slogan-en').addClass('fadein');
                 }
-                if(scrollbar < 2100 ){
+                if(scrollbar < 1690 ){
                     $('.slogan-en').removeClass('fadein');
                     $('.slogan-en').addClass('fadeout');
                 }
@@ -504,15 +524,26 @@
         $('.m-dropdown-toggler').click(
             function(){
                 $('.m-dropdown-toggler-icon').toggleClass("m-dropdown-toggler--rotate");
-                
                 $('.m-dropdown-wrapper').toggle("ease");
+                $('#m-togglerContent--Gift,#m-togglerContent--Cake,#m-togglerContent--WeddingnBaby').hide("ease");
             }
         );
         $('#m-toggler--Gift').click(
             function(){
-                // $('.m-dropdown-toggler-icon').toggleClass("m-dropdown-toggler--rotate");
-                
                 $('#m-togglerContent--Gift').toggle("ease");
+                $('#m-togglerContent--Cake,#m-togglerContent--WeddingnBaby').hide("ease");
+            }
+        );
+        $('#m-toggler--Cake').click(
+            function(){
+                $('#m-togglerContent--Cake').toggle("ease");
+                $('#m-togglerContent--Gift,#m-togglerContent--WeddingnBaby').hide("ease");
+            }
+        );
+        $('#m-toggler--WeddingnBaby').click(
+            function(){
+                $('#m-togglerContent--WeddingnBaby').toggle("ease");
+                $('#m-togglerContent--Gift,#m-togglerContent--Cake').hide("ease");
             }
         );
         
