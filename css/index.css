@@ -708,15 +708,17 @@ p.copyRight{
         height: 200px;
     }
     .feature-container .item-name{
-        font-size: 1.875em;
+        font-size: 1.5em;
         color:  saddlebrown;
+        margin-top: 20px;
+        line-height: 40px;
     }
     .feature-title::before{
         top: 25px;
     }
     .feature-container .more{
         line-height: 40px;
-        margin-top: 40px;
+        margin: 30px 0;
     }
     .feature-container .more a, .feature-container .more:hover a{
         width: 140px;
