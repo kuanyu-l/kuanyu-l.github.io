@@ -654,8 +654,8 @@ p.copyRight{
         height: 41px;
         display: flex;
         align-items: center;
+        font-size: 1em;
     }
-
 
     .navbar-toggler{
         display: block;
