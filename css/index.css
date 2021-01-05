@@ -159,11 +159,13 @@ img{ width: 100%;}
 }
 
 
-.container{ margin: auto; padding: 80px 0 0 0;
+.container{ padding: 80px 0 0 0; 
 }
 .item-container{ padding-bottom: 60px;
 }
-
+.container, .feature-container, .carousel-inner{
+    max-width: 1500px; margin: auto;
+}
 
 /* 大標題樣式 */
 .topic-title{
@@ -403,7 +405,9 @@ span.item-name-en{ font-size: .5em;
     color: white;
     padding: ;
 }
-#footer .container{ margin: 0 0 0 auto; padding-top: 30px;
+#footer .container{ 
+    /* margin: 0 0 0 auto;  */
+    padding-top: 30px;
 }
 .footer-company p, .companyList a, .footer-navbar a, .footer-contact p{
     font-size: .875em;
@@ -421,7 +425,9 @@ span.item-name-en{ font-size: .5em;
 .companyList{
 
 }
-
+.companyList li{
+    margin: 0 20px;
+}
 .footer-navbar{ margin: 0 auto;
 }
 .footer-navbar ul{
