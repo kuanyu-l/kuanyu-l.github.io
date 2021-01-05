@@ -16,12 +16,12 @@
 <body>
     <!-- 頁首導覽列 -->
     <div class="header">
-        <div class="navbar-toggler-wrapper fixed-top">
+        <div class="m-navbar-wrapper fixed-top">
             <a href="#" class="brand-logo">
                 <img src="/images/imei-logo.png" alt="義美食品">
             </a>
-            <button class="navbar-toggler navbar-toggler-dropdown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-toggler-dropdown-toggle">
+            <button class="m-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
                     <svg viewBox="0 0 80 70" width="30" height="30">
                         <rect width="90" height="5" rx="8" style="fill: black;"></rect>
                         <rect y="30" width="90" height="5" rx="8" style="fill: black;"></rect>
@@ -29,62 +29,108 @@
                     </svg>
                 </span>
             </button>
-            <div class="navbar-toggler-dropdown-bg">
+            
+        </div>
+        <div class="m-menu-bg hidden">
 
-            </div>
-            <div class="navbar-toggler-dropdown-wrapper hidden">
-                <div class="container">
-                    <button class="dropdown-wrapper-cancel">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <ul class="navbar-toggler-dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li class="nav-link"><a href="#">關於義美</a></li>
-                        <li class="nav-link m-dropdown">
-                            <a href="#" class="dropdown-toggle">所有商品
-                                <div class="dropdown-wrapper">
-                                    <div class="container">
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-                                            <li class="dropdown-item">
-                                                <a href="#">精緻禮品 <span>Gift</span></a>
-                                                <ul class="dropdown-item-class">
-                                                    <li><a href="#">季節禮盒 <span>Festival</span></a></li>
-                                                    <li><a href="#">伴手禮 <span>Souvenirs</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#">義美蛋糕 <span>Birthday</span></a>
-                                                <ul class="dropdown-item-class">
-                                                    <li><a href="#">冰淇淋蛋糕 <span>Ice Cream Cake</span></a></li>
-                                                    <li><a href="#">手繪蛋糕 <span>Hand Draw Cake</span></a></li>
-                                                    <li><a href="#">客製化蛋糕 <span>Customized</span></a></li>
-                                                    <li><a href="#">乳酪芝士塔 <span>Cheese Cake</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a href="#">喜餅/彌月 <span>Wedding/Baby</span></a>
-                                                <ul class="dropdown-item-class">
-                                                    <li><a href="#">IRIS 喜餅 <span>IRIS</span></a></li>
-                                                    <li><a href="#">Alamode 喜餅 <span>Alamode</span></a></li>
-                                                    <li><a href="#">彌月 <span>Baby</span></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+        </div>
+        <div class="m-menu-wrapper hidden">
+            <div class="container">
+                <button class="m-menu-cancel">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </button>
+                <ul class="m-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li class="nav-link"><a href="#">關於義美</a></li>
+                    <li class="nav-link">
+                        <div class="m-dropdown">
+                            <a href="#">
+                                所有商品
                             </a>
-                        </li>
-                        <li class="nav-link"><a href="#">最新消息</a></li>
-                        <li class="nav-link"><a href="https://imec.imeifoods.com.tw/" target="blank">義美安心購</a></li>
-                        <li class="nav-link"><a href="#">門市據點</a></li>
-                    </ul>
-                </div>
+                            <div class="m-dropdown-toggler">
+                                <button class="m-dropdown-toggler-icon">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="saddlebrown" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="m-dropdown-wrapper">
+                            <div class="container">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="m-dropdown-item">
+                                            <a href="#">精緻禮品 Gift</a>
+                                            <div class="m-dropdown-item-toggler">
+                                                <button class="m-dropdown-item-toggler-icon" id="m-toggler--Gift">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="saddlebrown" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="m-dropdown-item-class" id="m-togglerContent--Gift">
+                                            <li><a href="#">季節禮盒 <span>Festival</span></a></li>
+                                            <li><a href="#">伴手禮 <span>Souvenirs</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="m-dropdown-item">
+                                            <a href="#">義美蛋糕 Cake</a>
+                                            <div class="m-dropdown-item-toggler">
+                                                <button class="m-dropdown-item-toggler-icon" id="m-toggler--Cake">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="saddlebrown" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-item-class hidden" id="m-togglerContent--Cake">
+                                            <li><a href="#">冰淇淋蛋糕 <span>Ice Cream Cake</span></a></li>
+                                            <li><a href="#">手繪蛋糕 <span>Hand Draw Cake</span></a></li>
+                                            <li><a href="#">客製化蛋糕 <span>Customized</span></a></li>
+                                            <li><a href="#">乳酪芝士塔 <span>Cheese Cake</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="m-dropdown-item">
+                                            <a href="#">喜餅/彌月 Wedding/Baby</a>
+                                            <div class="m-dropdown-item-toggler">
+                                                <button class="m-dropdown-item-toggler-icon" id="m-toggler--WeddingnBaby">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="saddlebrown" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-item-class hidden" id="m-togglerContent--WeddingnBaby">
+                                            <li><a href="#">IRIS 喜餅 <span>IRIS</span></a></li>
+                                            <li><a href="#">Alamode 喜餅 <span>Alamode</span></a></li>
+                                            <li><a href="#">彌月 <span>Baby</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-link"><a href="#">最新消息</a></li>
+                    <li class="nav-link"><a href="https://imec.imeifoods.com.tw/" target="blank">義美安心購</a></li>
+                    <li class="nav-link"><a href="#">門市據點</a></li>
+                </ul>
             </div>
         </div>
-        
         <nav class="nav-wrap col-12">
             <div class="toolbar row" id="toolbar">
                 <div class="toolbar-search">
@@ -132,7 +178,7 @@
                     <li class="nav-link"><a href="#">關於義美</a></li>
                     <li class="nav-link dropdown">
                         <a href="#" class="dropdown-toggle">所有商品
-                            <div class="dropdown-wrapper">
+                            <div class="dropdown-wrapper hidden">
                                 <div class="container">
                                     <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                                         <li class="dropdown-item">
@@ -262,8 +308,8 @@
                 </button>
             </div>
         </div>
-        <div class="feature-container col-12 row hidden" id="index-feature-walnutcake">
-            <div class="goods-pic col-11 col-lg-12 col-xl-7">
+        <div class="feature-container col-11 col-md-12 row hidden" id="index-feature-walnutcake">
+            <div class="goods-pic col-lg-7">
                 <img src="/images/walnut date cake.jpeg">
             </div>
             <div class="col-12 col-lg-5 m-a">
@@ -442,18 +488,34 @@
                 $('.dropdown-wrapper').slideUp();
             }
         );
-        $('.navbar-toggler-dropdown').click(
+        $('.m-navbar-toggler').click(
             function(){
-                $('.navbar-toggler-dropdown-bg').fadeIn();
-                $('.navbar-toggler-dropdown-wrapper').slideDown();
+                $('.m-menu-bg').removeClass('hidden');
+                $('.m-menu-bg').fadeIn();
+                $('.m-menu-wrapper').slideDown();
             }
         );
-        $('.dropdown-wrapper-cancel').click(
+        $('.m-menu-cancel').click(
             function(){
-                $('.navbar-toggler-dropdown-bg').fadeOut();
-                $('.navbar-toggler-dropdown-wrapper').slideUp();
+                $('.m-menu-bg').fadeOut();
+                $('.m-menu-wrapper').slideUp();
             }
         );
+        $('.m-dropdown-toggler').click(
+            function(){
+                $('.m-dropdown-toggler-icon').toggleClass("m-dropdown-toggler--rotate");
+                
+                $('.m-dropdown-wrapper').toggle("ease");
+            }
+        );
+        $('#m-toggler--Gift').click(
+            function(){
+                // $('.m-dropdown-toggler-icon').toggleClass("m-dropdown-toggler--rotate");
+                
+                $('#m-togglerContent--Gift').toggle("ease");
+            }
+        );
+        
     })
 </script>
 
