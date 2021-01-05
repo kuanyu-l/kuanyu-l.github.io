@@ -573,6 +573,7 @@ p.copyRight{
         /* margin: 0; */
         padding: 0;
         border-top: none;
+        border-image: none;
     }
     
     .m-dropdown-item{
