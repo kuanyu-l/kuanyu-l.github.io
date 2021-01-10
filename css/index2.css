@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+*{ margin: 0; padding: 0; box-sizing: border-box; outline:none;}
+img{ width: 100%; height: 100%; }
+button{ border: none; background: none;}
+button *{margin: auto auto;}
+ol, ul{ list-style: none;}
+a{ color: black; text-decoration: none;}
+
+
+.wrapper{ width: 100%;
+}
+.container{ margin: 0 auto; padding: 10px 0;
+}
+.hide{ display: none;
+}
+.fixed-top{
+    position: fixed;
+    top: 0;
+}
+.rotate-180deg{
+    transform: rotate(180deg);
+}
+/* 表頭導覽列 Header */
+.navWrapper{ background-color: #fff;}
+.navbar, .menuList{
+    align-items: center;
+    margin: auto;
+}
+.search-container{}
+.search-container input, .search-container .cancel, .m-navbar-toggler, .m-drawer-wrapper, .m-subDrawer-list, .m-menu-bg, .m-menu,  .m-menu .container{
+    display: none;
+}
+.icon{
+    color:#733544;
+    margin: 10px;
+}
+
+/* 選單列表 Menu */
+.menu{}
+.menuList-item a, .m-subsidiary-container a{
+    display: inline-block;
+    line-height: 2.5em;
+    width: 148px;
+    text-align: center;
+    color:#733544;
+}
+.menuList-item a:hover{
+    color:#dfa963;
+}
+
+
+
+@media screen and (max-width: 767px){
+    /* 手機版導覽列 */
+    .navWrapper{ 
+        display:block; 
+        position: fixed; 
+        top: 0; 
+        z-index:99;
+    }
+    .navbar{ 
+        z-index: 99;
+        justify-content: space-between;
+    }
+    .sicial-container, .menu{ display: none;}
+    .m-navbar-toggler, .m-menu .sicial-container{ display: block;}
+    .brandLogo{ width: 60px;}
+    
+    /* 手機版選單 */
+    /* 手機版選單--背景 */
+    .m-menu-bg{
+        height:100vh;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 100;
+    }
+    /* 手機版選單--第一層 */
+    .m-menu{ 
+        right: 0;
+        height: 100vh; 
+        background-color: #fff; 
+        z-index: 100;
+    }
+    .m-menu .container{
+        height:100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .m-menu-header{ 
+        border-bottom: 1px solid saddlebrown;
+        margin: 0 15px;
+        padding: 5px 10px 5px 0;
+    }
+    .m-menu-scrollable{
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .m-menuList{}
+    .menuList-item{
+        display: block;
+        padding: 5px 20px 5px 25px;
+        border-bottom: 1px solid #c59878;
+    }
+    .m-menuList .menuList-item a{
+        text-align: left;
+        line-height: 40px;
+        font-size: .875em;
+        width: 100%;
+    }
+    .m-dropdown, .m-drawer-dropdown{ 
+        justify-content: space-between; 
+        align-items: center; 
+        flex-wrap: nowrap;
+    }
+    /* 手機版選單--第二層 */
+    .m-drawer-wrapper{ 
+        font-size: .75em;
+        margin-top: 5px;
+        overflow: hidden;
+    }
+    /* 手機版選單--第三層 */
+    .m-subDrawer-list{ position: relative;}
+    .m-subDrawer-list::before, .subsidiary-item::after{
+        content: "";
+        display: block;
+        width: 1px;
+        position: absolute;
+        background: saddlebrown;
+    }
+    .m-subDrawer-list::before{
+        top: 10px;
+        left: 5px;
+        bottom: 10px;
+    }
+    .m-subDrawer-list a{
+        margin-left: 25px;
+        line-height: 35px;
+    }
+
+    /* 手機版選單icon */
+    .icon{ margin: 0;}
+    .icon svg{ width: 25px;
+    }
+    .m-dropdown-toggler, [id*="m-toggler-"]{ transition: all .5s ease;}
+    /* 手機版選單icon--X */
+    .m-menu .cancel{ 
+        display: block; 
+        margin: 5px 0 5px auto;
+    }
+    .m-menu .cancel svg{ width: 35px;
+    }
+    /* 手機版選單icon--第一層下拉 */
+    .m-dropdown-toggler{ width: 40px;}
+    .m-dropdown-toggler svg{ width: 20px;
+    }
+    /* 手機版選單icon--第二層下拉 */
+    .drawer-dropdown-toggler{
+        width: 40px; 
+        height: 40px; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .drawer-dropdown-toggler .icon{
+        border: 1px solid saddlebrown;
+        width: 25px;
+        height: 25px;
+        padding-top: 4px;
+        border-radius: 50%;
+        display: block;
+    }
+    .m-menu .sicial-container, .m-subsidiary-container{
+        margin: 20px 15px 20px 25px;
+    }
+    .m-menu .sicial-container button{
+        width: 40px;
+        height: 40px;
+    }
+    .m-subsidiary-container{
+        margin: 20px 15px 20px 25px;
+    }
+    .m-subsidiary-container .subsidiary-list{
+        width: 100%;
+    }
+    .m-smallMark{
+        border-bottom: 1px solid #333;
+        color: #333;
+    }
+    .subsidiary-item{
+        position: relative;
+        width: 33.3333%;
+    }
+    .subsidiary-item::after{
+        top: 10px;
+        bottom: 10px;
+    }
+    .subsidiary-item:first-child::after{
+        right: 8px;
+    }
+    .subsidiary-item:nth-child(2)::after{
+        right: 15px;
+    }
+    .subsidiary-item:last-child::after{
+        display: none;
+    }
+    .m-subsidiary-container a, .m-smallMark{
+        font-size: .625em;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    /* Banner輪播 */
+    .carousel{ margin-top: 80px; height: 200px;}
+    .carousel-item{ height: 100%;}
+    .carousel img{ object-fit: cover;}
+
+}
+@media screen and (min-width: 768px){
+    .navWrapper{ position: relative;}
+    .navbar{ margin-bottom:20px;}
+    .brandLogo{ 
+        width: 90px;
+        margin: 0 auto;
+    }
+    .sicial-container{
+        display: block;
+        margin-right: -50px;
+    }
+    .icon svg{
+        width: 30px;
+    }
+    .menuList{
+        justify-content: space-between;
+    }
+}
